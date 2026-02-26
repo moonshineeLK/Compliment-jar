@@ -1,0 +1,27 @@
+import random
+
+compliments = [
+    "You are doing better than you think 💜",
+    "Your effort is beautiful 🌙",
+    "You have a soft but strong heart ✨",
+    "I'm proud of you, sweetheart 💕",
+    "You make ordinary days special 🌸",
+    "You are growing, even on tired days 🌱"
+]
+
+
+def give_compliment():
+    return random.choice(compliments)
+
+
+print("🌷 Welcome to Your Compliment Jar 🌷")
+
+while True:
+    choice = input("\nPress enter for a compliment or type 'exit': ").lower()
+
+    if choice == "exit":
+        print("\nTake care, moonshine. I'm always with you 💜")
+        break
+
+    message = give_compliment()
+    print("\n💌 " + message)
